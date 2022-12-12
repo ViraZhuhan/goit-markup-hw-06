@@ -183,7 +183,7 @@
     </main>
     <!-- Футер -->
     <footer>
-        <div class="container">
+        <div class="container footer-container">
             <div class="footer-wrap">
                 <a class="logo" href="./index.html"><span class="logo-span">Web</span>Studio</a>
                 <address>
@@ -197,46 +197,47 @@
                     </ul>
                 </address>
             </div>
-
-            <div class="footer-wrap">
+            <div class="footer-wrap-join">
                 <p class="join">Приєднуйтесь</p>
                 <ul class="footer-soc-list list">
                     <li class="footer-soc-items"><a href="#" class="footer-soc-link link">
-                            <svg class="footer-soc-icons">
+                            <svg width="20" hight="20" class="footer-soc-icons">
                                 <use href="./images/icons.svg#icon-instagram"></use>
                             </svg>
                         </a></li>
                     <li class="footer-soc-items"><a href="#" class="footer-soc-link link">
-                            <svg class="footer-soc-icons">
+                            <svg width="20" hight="20" class="footer-soc-icons">
                                 <use href="./images/icons.svg#icon-twitter"></use>
                             </svg>
                         </a></li>
                     <li class="footer-soc-items"><a href="#" class="footer-soc-link link">
-                            <svg class="footer-soc-icons">
+                            <svg width="20" hight="20" class="footer-soc-icons">
                                 <use href="./images/icons.svg#icon-facebook"></use>
                             </svg>
                         </a></li>
                     <li class="footer-soc-items"><a href="#" class="footer-soc-link link">
-                            <svg class="footer-soc-icons">
+                            <svg width="20" hight="20" class="footer-soc-icons">
                                 <use href="./images/icons.svg#icon-linkedin"></use>
                             </svg>
                         </a></li>
                 </ul>
             </div>
             <div class="footer-wrap-form">
-                <div class="newsletter-wrap">
-                    <p class="newsletter">Підпишіться на розсилку</p>
-                    <form class="js-speaker">
-                        <input class="footer-input" type="email" name="email" id="email" placeholder="E-mail">
+                <p class="newsletter">Підпишіться на розсилку</p>
+                <form class="js-speaker">
+                    <div class="newsletter-wrap">
                         <label for="email"></label>
-                    </form>
-                </div>
-                <div class="newsletter-wrap-send">
-                    <button class="submit-footer-btn" type="submit">Підписатися</button>
-                    <svg class="newsletter-icons">
-                        <use href="./images/icons.svg#icon-send"></use>
-                    </svg>
-                </div>
+                        <input class="footer-input" type="email" name="email" id="email" placeholder="E-mail" required>
+
+                    </div>
+                    <div class="newsletter-wrap-send">
+                        <button class="submit-footer-btn" type="submit">Підписатися
+                            <svg class="newsletter-icons" widht="24" height="24">
+                                <use href="./images/icons.svg#icon-send"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
     </footer>
