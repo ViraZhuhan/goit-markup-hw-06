@@ -828,6 +828,7 @@ footer .join {
     height: 15px;
     margin-right: 7px;
     border: 2px solid var(--primary-link-color);
+    cursor: pointer;
 }
 
 .checkmark {
