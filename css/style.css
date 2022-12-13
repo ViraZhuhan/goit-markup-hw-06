@@ -472,7 +472,7 @@ footer {
     display: flex;
     align-items: baseline;
 }
-.footer-wrap:nth-child(1) {
+.footer-wrap:first-child {
     margin-right: 70px;
 }
 
