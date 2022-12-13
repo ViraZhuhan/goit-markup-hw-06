@@ -471,14 +471,7 @@ footer {
 .footer-container {
     display: flex;
     align-items: baseline;
-}
-
-.footer-wrap {
-    margin-right: 70px;
-}
-
-.footer-wrap-join {
-    margin-right: 93px;
+    gap: 70px;
 }
 
 footer .logo {
@@ -569,7 +562,10 @@ footer .join {
     display: flex;
     justify-content: flex-end;
     margin-left: auto;
+    gap: 12px;
 }
+
+
 
 .newsletter {
     margin-bottom: 20px;
@@ -583,7 +579,7 @@ footer .join {
 }
 
 .footer-input {
-    margin-right: 12px;
+    
     padding: 15px 16px;
     width: 358px;
     height: 50px;
@@ -742,8 +738,8 @@ footer .join {
     transition: fill 250ms var(--timeng-function);
 }
 
-.input-group:hover,
-.input-group:focus {
+.input-group:hover+label,
+.modal-input-group:focus+.input-group {
     border: 1px solid var(--accent-bg-color);
     border-radius: 4px;
     outline: transparent;
