@@ -471,7 +471,13 @@ footer {
 .footer-container {
     display: flex;
     align-items: baseline;
-    gap: 70px;
+}
+.footer-wrap:nth-child(1) {
+    margin-right: 70px;
+}
+
+.footer-wrap:nth-child(2) {
+    margin-right: 93px;
 }
 
 footer .logo {
@@ -562,10 +568,8 @@ footer .join {
     display: flex;
     justify-content: flex-end;
     margin-left: auto;
-    gap: 12px;
+    
 }
-
-
 
 .newsletter {
     margin-bottom: 20px;
@@ -579,7 +583,7 @@ footer .join {
 }
 
 .footer-input {
-    
+    margin-right: 12px;
     padding: 15px 16px;
     width: 358px;
     height: 50px;
@@ -714,9 +718,17 @@ footer .join {
     transition: border 250ms var(--timeng-function);
 }
 
-.modal-input:valid {
+.modal-input:valid,
+.modal-input:hover,
+.modal-input:focus {
     border: 1px solid var(--accent-bg-color);
     border-radius: 4px;
+}
+
+.modal-input:valid + svg,
+.modal-input:hover + svg,
+.modal-input:focus + svg{
+    fill: var(--accent-bg-color);
 }
 
 .modal-input:required {
@@ -736,14 +748,6 @@ footer .join {
     height: 18px;
     transform: translate(50%, 60%);
     transition: fill 250ms var(--timeng-function);
-}
-
-.input-group:hover+label,
-.modal-input-group:focus+.input-group {
-    border: 1px solid var(--accent-bg-color);
-    border-radius: 4px;
-    outline: transparent;
-    fill: var(--accent-bg-color);
 }
 
 .modal-input-group:not(:last-child) {
@@ -792,7 +796,7 @@ footer .join {
     color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-text:not(:placeholder-shown) {
+.modal-text:not(::placeholder-shown) {
    border: 1px solid var(--accent-bg-color);
     border-radius: 4px;
     outline: transparent;
@@ -832,6 +836,10 @@ footer .join {
     fill: transparent;
 }
 
+.modal-politic-check {
+    opacity: 0;
+}
+
 .modal-politic-check:checked+label>span {
     background-color: var(--accent-bg-color);
     border: 0.2px solid var(--primary-white-color);
@@ -841,6 +849,7 @@ footer .join {
 .modal-politic-check:checked+label>span>.checkmark {
     fill: var(--primary-white-color);
 }
+
 
 .submit-btn {
     display: block;
