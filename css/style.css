@@ -796,6 +796,12 @@ footer .join {
     color: rgba(117, 117, 117, 0.5);
 }
 
+.modal-text:not(:placeholder-shown) {
+   border: 1px solid var(--accent-bg-color);
+    border-radius: 4px;
+    outline: transparent;
+}
+
 .modal-politic-label {
     display: flex;
     justify-content: center;
@@ -810,6 +816,7 @@ footer .join {
 }
 
 .contract {
+    margin-left: 5px;
     color: var(--accent-bg-color);
 }
 
