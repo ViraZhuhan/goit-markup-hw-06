@@ -564,11 +564,16 @@ footer .join {
     fill: var(--primary-white-color);
 }
 
+.footer-soc-icons {
+    width: 20px;
+    height: 20px;
+}
+
 .js-speaker {
     display: flex;
     justify-content: flex-end;
     margin-left: auto;
-    
+    gap: 12px;
 }
 
 .newsletter {
@@ -583,7 +588,6 @@ footer .join {
 }
 
 .footer-input {
-    margin-right: 12px;
     padding: 15px 16px;
     width: 358px;
     height: 50px;
@@ -717,7 +721,6 @@ footer .join {
     line-height: 1.17;
     letter-spacing: 0.01em;
     transition: border 250ms var(--timeng-function);
-    cursor: pointer;
 }
 
 .modal-input:valid,
